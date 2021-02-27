@@ -15,7 +15,7 @@ export default {
     @import url('./pug-less/less/index.less');
 	body{background-color: @bg-color;}
 	main{
-		width: 1440px;
+		//width: 1440px;
 		margin: 0 auto;
 		background-color: @bg-color;
 	}

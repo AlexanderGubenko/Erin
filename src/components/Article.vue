@@ -18,7 +18,7 @@
                     .signature
                         picture
                             source(srcset="img/author/signature.webp", type="image/webp")
-                            img(src="img/author/signature.png"  alt="author")
+                            img.img(src="img/author/signature.png"  alt="author")
                     .author
                         .frame
                             picture
@@ -52,6 +52,9 @@ export default {
         color: @color;
         margin: 0 auto;
         max-width: 601px;
+        @media (max-width: 650px) {
+            margin: 0 20px;
+        }
         .header{
             min-height: 103px;
             display: flex;
@@ -77,6 +80,9 @@ export default {
                 margin-left: 29px;
                 border-left: red 1px solid;
                 padding: 21px 28px 134px;
+                @media (max-width: 450px) {
+                    padding-bottom: 300px;
+                }
                 .p{margin: 20px 0;}
                 .signature-author{
                     min-height: 195px;
@@ -85,6 +91,22 @@ export default {
                     bottom: -35px;
                     display: flex;
                     justify-content: space-between;
+                    //background-color: aqua;
+                    @media (max-width: 450px) {
+                        height: 350px;
+                    }
+                    .signature{
+                        width: 196px;
+                        height: 97px;
+                        @media (max-width: 650px) {
+                            width: 100px;
+                        }
+                        .img{
+                            object-fit: contain;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
                     .author{
                         position: relative;
                         .frame{
