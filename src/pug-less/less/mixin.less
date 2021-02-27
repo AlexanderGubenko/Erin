@@ -1,0 +1,21 @@
+@color: #000;
+@bg-color: white;
+
+.button(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    height: 70px;
+    background-image: linear-gradient(0.0deg, #e70e5f 0%, #f78e32 100%);
+    border-radius: 35px;
+    font-family: 'Proxima-nova', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @bg-color;
+    fill: @bg-color;
+    cursor: pointer;
+    &:hover{background-image: linear-gradient(0.0deg, #f78e32 0%, #e70e5f 100%);}
+}
